@@ -63,7 +63,7 @@ p {
         }
     }
 
-    /* Header Inner*/
+    // Header Inner
     &-inner {
 
     }
@@ -96,6 +96,23 @@ p {
 
         &.current {
             border-color: $main-clr;
+        }
+    }
+}
+
+/* Home Section */
+#home {
+    &-a {
+        .specials {
+            margin-top: 3rem;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 1rem;
+
+            i {
+                color: $main-clr;
+                margin-bottom: 0.4rem;
+            }
         }
     }
 }

@@ -21,7 +21,6 @@
   text-align: center;
 }
 
-/* Buttons */
 .btn-main, .btn-light, .btn-dark {
   display: inline-block;
   margin-top: 0.8rem;
@@ -51,6 +50,30 @@ button[class^='btn-']:hover,
 input[class^='btn-']:hover,
 a[class^='btn-']:hover {
   background: #ffbc00;
+}
+
+.p1 {
+  padding: 1rem;
+}
+
+.p2 {
+  padding: 1.5rem;
+}
+
+.p3 {
+  padding: 2rem;
+}
+
+.py1 {
+  padding: 1rem 0;
+}
+
+.py2 {
+  padding: 1.5rem 0;
+}
+
+.py3 {
+  padding: 2rem 0;
 }
 
 /* Reset */
@@ -95,10 +118,6 @@ p {
 }
 
 /* Header */
-#header {
-  /* Header Inner*/
-}
-
 #header-home {
   color: #fff;
   background: url("../img/showcase.jpg") no-repeat center center/cover;
@@ -146,5 +165,20 @@ p {
 
 #main-nav a.current {
   border-color: #ffbc00;
+}
+
+/* Home Section */
+#home-a .specials {
+  margin-top: 3rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[4];
+      grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+#home-a .specials i {
+  color: #ffbc00;
+  margin-bottom: 0.4rem;
 }
 /*# sourceMappingURL=style.css.map */
