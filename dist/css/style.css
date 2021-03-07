@@ -78,10 +78,13 @@ a[class^='btn-']:hover {
 }
 
 .card {
-  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
   padding: 1rem;
   text-align: center;
+  -webkit-transition: 0.6s -webkit-box-shadow ease;
+  transition: 0.6s -webkit-box-shadow ease;
+  transition: 0.6s box-shadow ease;
+  transition: 0.6s box-shadow ease, 0.6s -webkit-box-shadow ease;
+  margin-bottom: 1rem;
 }
 
 .bottom-line {
@@ -251,7 +254,8 @@ p {
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 1.5rem;
+  margin-top: 2rem;
 }
 
 #home-c .process-img {
@@ -298,6 +302,11 @@ p {
   text-align: center;
   -webkit-transition: 1s background ease;
   transition: 1s background ease;
+}
+
+#home-c .process .card:hover {
+  -webkit-box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
 }
 
 #home-c .process .card:hover .process-img {

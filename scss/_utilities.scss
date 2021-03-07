@@ -64,9 +64,10 @@ a[class^='btn-']:hover {
 
 // Cards
 .card {
-    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
     padding: 1rem;
     text-align: center;
+    transition: 0.6s box-shadow ease;
+    margin-bottom: 1rem;
 }
 
 // Bottom line

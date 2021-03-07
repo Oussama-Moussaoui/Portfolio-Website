@@ -157,7 +157,8 @@ p {
         .process {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            grid-gap: 1rem;
+            grid-gap: 1.5rem;
+            margin-top: 2rem;
             
             // &-icon {
             //     position: relative;
@@ -218,6 +219,7 @@ p {
             }
 
             .card:hover {
+                box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
                 .process-img {
                     background: $main-clr;
                     width: 135px;
