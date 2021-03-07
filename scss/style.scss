@@ -48,7 +48,7 @@ p {
     // Header Home
     &-home {
         color: #fff;
-        background: $bg-img no-repeat center center/cover;
+        background: $bg-img no-repeat center right/cover;
         height: 100vh;
 
         // Header Content
@@ -65,7 +65,9 @@ p {
 
     // Header Inner
     &-inner {
-
+        background: $bg-img no-repeat 20% 30%/cover;
+        height: 5.5rem;
+        border-bottom: 3px $main-clr solid;
     }
 }
 
@@ -157,7 +159,7 @@ p {
         .process {
             display: grid;
             grid-template-columns: repeat(4, 1fr);
-            grid-gap: 1.5rem;
+            grid-gap: .5rem;
             margin-top: 2rem;
             
             // &-icon {

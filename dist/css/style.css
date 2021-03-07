@@ -142,13 +142,19 @@ p {
 /* Header */
 #header-home {
   color: #fff;
-  background: url("../img/showcase.jpg") no-repeat center center/cover;
+  background: url("../img/showcase.jpg") no-repeat center right/cover;
   height: 100vh;
 }
 
 #header-home .header-content {
   padding-top: 20%;
   text-align: center;
+}
+
+#header-inner {
+  background: url("../img/showcase.jpg") no-repeat 20% 30%/cover;
+  height: 5.5rem;
+  border-bottom: 3px #ffbc00 solid;
 }
 
 /* Main Nav */
@@ -254,7 +260,7 @@ p {
   display: grid;
   -ms-grid-columns: (1fr)[4];
       grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1.5rem;
+  grid-gap: .5rem;
   margin-top: 2rem;
 }
 
