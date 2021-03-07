@@ -330,4 +330,17 @@ img {
             }
         }
     }
+
+    // About - C
+    &-c {
+        .about-logos {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 1.5rem;
+
+            img {
+                width: 70%;
+            }
+        }
+    }
 }
