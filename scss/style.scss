@@ -37,6 +37,10 @@ p {
     margin: 10px 0;
 }
 
+img {
+    width: 100%;
+}
+
 /* Logo */
 #logo {
     width: 75px;
@@ -258,6 +262,52 @@ p {
 
             &:hover {
                 background: $main-clr;
+            }
+        }
+    }
+}
+
+// About Sections
+#about {
+    &-a {
+        .about-info {
+            display: grid;
+            grid-template-areas:
+                'bio-image bio bio'
+                'aw1 aw2 aw3';
+            grid-gap: 1rem;
+
+            .bio-img {
+                grid-area: bio-image;
+            }
+
+            .bio {
+               grid-area: bio;
+                padding: 1rem;
+                border-left: 3px $main-clr solid;
+
+                p {
+                    margin-bottom: 0;
+                }
+            }
+
+            .award {
+                text-align: center;
+                margin-top: 1rem;
+                .fas {
+                    margin-bottom: 1rem;
+                    color: $main-clr;
+                }
+            }
+
+            .aw1 {
+                grid-area: aw1;
+            }
+            .aw2 {
+                grid-area: aw2;
+            }
+            .aw3 {
+                grid-area: aw3;
             }
         }
     }

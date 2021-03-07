@@ -20,6 +20,26 @@
     text-align: center;
 }
 
+// Backgrounds
+.bg {
+    &-main {
+        background: $main-clr;
+        color: #fff;
+    }
+    &-dark {
+        background: $dark-clr;
+        color: #fff;
+    }
+    &-light {
+        background: $light-clr;
+        color: #111;
+    }
+    &-medium {
+        background: $medium-clr;
+        color: #111;
+    }
+}
+
 // Buttons
 %btn-shared {
     display: inline-block;
@@ -80,4 +100,5 @@ a[class^='btn-']:hover {
 
 .section-title {
     font-size: 2rem;
+    text-align: center;
 }
