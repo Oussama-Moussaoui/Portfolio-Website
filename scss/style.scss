@@ -102,6 +102,7 @@ p {
 
 /* Home Section */
 #home {
+    // Home Section A
     &-a {
         .specials {
             margin-top: 3rem;
@@ -116,6 +117,7 @@ p {
         }
     }
 
+    // Home Section B
     &-b {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -147,6 +149,84 @@ p {
         .stats-number {
             font-size: 2rem;
             font-weight: bold;
+        }
+    }
+
+    // Home Section C
+    &-c {
+        .process {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 1rem;
+            
+            // &-icon {
+            //     position: relative;
+            //     background: $dark-clr;
+            //     color: #fff;
+            //     padding: 2rem;
+            //     border-radius: 50%;
+            //     height: 120px;
+            //     width: 120px;
+            //     text-align: center;
+            //     transition: all 1s;
+            // }
+            
+            // &-step {
+            //     position: absolute;
+            //     top: 0;
+            //     right: 0;
+            //     font-size: 28px;
+            //     background: $main-clr;
+            //     height: 15px;
+            //     width: 15px;
+            //     line-height: 15px;
+            //     padding: 1rem;
+            //     border-radius: 50%;
+            //     transition: 1s all ease;
+            // }
+
+            &-img {
+                position: relative;
+                background: $dark-clr;
+                color: #fff;
+                height: 120px;
+                width: 120px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 1rem;
+                border-radius: 50%;
+                margin: 0 auto 1rem auto;
+                transition: 1s all ease;
+            }
+
+            &-step {
+                position: absolute;
+                top: 0;
+                right: 0;
+                height: 2.5rem;
+                width: 2.5rem;
+                background: $main-clr;
+                font-size: 28px;
+                font-weight: bold;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+                transition: 1s background ease;
+            }
+
+            .card:hover {
+                .process-img {
+                    background: $main-clr;
+                    width: 135px;
+                    height: 135px;
+                }
+                .process-step {
+                    background: $dark-clr;
+                }
+            }
         }
     }
 }
