@@ -269,6 +269,7 @@ img {
 
 // About Sections
 #about {
+    // About - A
     &-a {
         .about-info {
             display: grid;
@@ -308,6 +309,24 @@ img {
             }
             .aw3 {
                 grid-area: aw3;
+            }
+        }
+    }
+
+    // About - B
+    &-b {
+        .progress {
+            width: 100%;
+            height: 1.2rem;
+            background: $medium-clr;
+            border-radius: 5px;
+            margin-bottom: 0.8rem;
+            margin-top: 5px;
+
+            div {
+                height: 100%;
+                background: $main-clr;
+                border-radius: 5px;
             }
         }
     }

@@ -438,4 +438,19 @@ img {
   -ms-grid-column: 3;
   grid-area: aw3;
 }
+
+#about-b .progress {
+  width: 100%;
+  height: 1.2rem;
+  background: #bbb;
+  border-radius: 5px;
+  margin-bottom: 0.8rem;
+  margin-top: 5px;
+}
+
+#about-b .progress div {
+  height: 100%;
+  background: #ffbc00;
+  border-radius: 5px;
+}
 /*# sourceMappingURL=style.css.map */
