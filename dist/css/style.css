@@ -1,6 +1,6 @@
 /* Imports */
 @import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
-/* Variables */
+/* Utility Classes*/
 .container {
   max-width: 1280px;
   margin: auto;
