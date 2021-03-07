@@ -1,1 +1,34 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+/* Imports */
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+/* Variables */
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* Main Styling */
+body {
+  font-family: 'Dosis', Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+  color: #ccc;
+}
+
+ul, li {
+  list-style: none;
+}
+
+h1, h2, h3 {
+  margin-bottom: 1rem;
+}
+
+p {
+  margin: 10px 0;
+}
+/*# sourceMappingURL=style.css.map */
