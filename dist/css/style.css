@@ -318,4 +318,39 @@ p {
 #home-c .process .card:hover .process-step {
   background: #333;
 }
+
+/* Main Footer */
+#main-footer {
+  background: #333;
+  color: #fff;
+  height: 5rem;
+}
+
+#main-footer .footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main-footer .footer-content .s-media a {
+  display: inline-block;
+  margin-right: 1rem;
+  padding: 7px 10px;
+  border-radius: 50px;
+  border: 2px #fff solid;
+  color: #fff;
+  -webkit-transition: 0.3s background ease;
+  transition: 0.3s background ease;
+}
+
+#main-footer .footer-content .s-media a:hover {
+  background: #ffbc00;
+}
 /*# sourceMappingURL=style.css.map */

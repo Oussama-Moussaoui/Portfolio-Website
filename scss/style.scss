@@ -232,3 +232,31 @@ p {
         }
     }
 }
+
+/* Main Footer */
+#main-footer {
+    background: $dark-clr;
+    color: #fff;
+    height: 5rem;
+
+    .footer-content {
+        display: flex;
+        justify-content: space-between;
+        height: 5rem;
+        align-items: center;
+
+        .s-media a {
+            display: inline-block;
+            margin-right: 1rem;
+            padding: 7px 10px;
+            border-radius: 50px;
+            border: 2px #fff solid;
+            color: #fff;
+            transition: 0.3s background ease;
+
+            &:hover {
+                background: $main-clr;
+            }
+        }
+    }
+}
