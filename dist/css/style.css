@@ -588,6 +588,12 @@ img {
   grid-gap: 1rem;
 }
 
+#contact-c h1 {
+  margin: 0;
+  text-transform: none;
+  font-size: 3rem;
+}
+
 /* Main Footer */
 #main-footer {
   background: #333;
