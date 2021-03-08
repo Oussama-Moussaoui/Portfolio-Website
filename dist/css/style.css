@@ -755,14 +755,23 @@ img {
   .l-heading {
     font-size: 3rem;
   }
+  .lead {
+    margin: 0;
+  }
   #header-home .header-content {
-    padding-top: 3rem;
+    padding-top: 2.5rem;
   }
 }
 
 @media (max-height: 375px) {
   #header-home .header-content {
     padding-top: 0;
+  }
+}
+
+@media (max-height: 330px) {
+  .l-heading {
+    font-size: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
