@@ -343,4 +343,31 @@ img {
             }
         }
     }
+
+    // About - D
+    &-d {
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: .5rem;
+
+            ul {
+                display: flex;
+                margin-top: 1rem;
+                align-items: center;
+
+                img {
+                    width: 70px;
+                    border-radius: 50%;
+                    margin-right: 0.5rem;
+                }
+            }
+
+            p {
+                border: $medium-clr 1px solid;
+                border-radius: 5px;
+                padding: .5rem;
+            }
+        }
+    }
 }
