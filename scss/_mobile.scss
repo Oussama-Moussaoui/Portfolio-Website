@@ -7,10 +7,14 @@
 
 // 620px and less
 @media (max-width: 620px) {
-
     // Large Heading
     .l-heading {
         font-size: 3.3rem;
+    }
+
+    // Paddings
+    .py-3, .py-2, .py-1 {
+        padding: 1rem 0;
     }
 
     // Main nav
@@ -48,7 +52,9 @@
     #home-b,
     #home-c .process,
     #about-d .testimonials,
-    #work-a .items {
+    #work-a .items,
+    #contact-a .form-wrap,
+    #contact-b .contact-info {
         grid-template-columns: 1fr;
     }
 
@@ -68,6 +74,35 @@
     }
 
     // About Page
+    #about {
+        &-a {
+            .about-info {
+                grid-template-areas:
+                'bio-image'
+                'bio'
+                'aw1'
+                'aw2'
+                'aw3';
+            }
+        }
+
+        &-c {
+            display: none;
+        }
+    }
+
+    // Contact
+    #contact-a .form-wrap #message {
+        grid-column: 1;
+    }
+
+    #contact-b .contact-info div {
+        border-bottom: 1px $medium-clr dotted;
+
+        &:last-child {
+            border: none;
+        }
+    }
 
     // Footer
     #main-footer {
