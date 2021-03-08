@@ -169,20 +169,9 @@ img {
   color: #fff;
   background: url("../img/showcase.jpg") no-repeat center right/cover;
   height: 100vh;
-  position: relative;
-}
-
-#header-home .header-home-container {
-  position: relative;
-  top: 0;
-  height: 100%;
 }
 
 #header-home .header-content {
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -197,6 +186,7 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  padding-top: 150px;
 }
 
 #header-inner {

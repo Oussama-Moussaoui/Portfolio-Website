@@ -54,27 +54,15 @@ img {
         color: #fff;
         background: $bg-img no-repeat center right/cover;
         height: 100vh;
-        position: relative;
-
-        // Header Home Container
-        .header-home-container {
-            position: relative;
-            top: 0;
-            height: 100%;
-        }
 
         // Header Content
         .header-content {
-            position: absolute;
-            top: 0;
-            height: 100%;
-            width: 100%;
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
             text-align: center;
-            // padding-top: 20%;
+            padding-top: 150px;
         }
     }
 
