@@ -647,7 +647,7 @@ img {
     height: 75vh;
   }
   #header-home .header-content {
-    padding-top: 3.5rem;
+    padding-top: 3rem;
   }
 }
 
@@ -670,13 +670,11 @@ img {
     padding: .9rem;
   }
   #header-home {
-    height: 85vh;
+    background-position: 55% center;
   }
-}
-
-@media (max-height: 640px) {
-  #header-home {
-    height: 100vh;
+  #header-inner {
+    height: 10rem;
+    border-width: 2px;
   }
 }
 /*# sourceMappingURL=style.css.map */
