@@ -738,4 +738,16 @@ img {
     height: 100vh;
   }
 }
+
+@media (width: 1024), (height: 1366px) {
+  #header-home {
+    height: 50vh;
+  }
+}
+
+@media (width: 540px), (height: 720px) {
+  #header-home {
+    height: 70vh;
+  }
+}
 /*# sourceMappingURL=style.css.map */
