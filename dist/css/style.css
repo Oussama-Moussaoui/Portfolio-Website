@@ -750,4 +750,19 @@ img {
     height: 70vh;
   }
 }
+
+@media (max-height: 580px) {
+  .l-heading {
+    font-size: 3rem;
+  }
+  #header-home .header-content {
+    padding-top: 3rem;
+  }
+}
+
+@media (max-height: 375px) {
+  #header-home .header-content {
+    padding-top: 0;
+  }
+}
 /*# sourceMappingURL=style.css.map */

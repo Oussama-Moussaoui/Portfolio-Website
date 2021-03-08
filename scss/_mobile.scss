@@ -121,14 +121,37 @@
     }
 }
 
+// iPad Pro
 @media (width: 1024), (height: 1366px) {
     #header-home {
         height: 50vh;
     }
 }
 
+// Surface Duo
 @media (width: 540px), (height: 720px) {
     #header-home {
         height: 70vh;
+    }
+}
+
+// Smartphone Landscape
+@media (max-height: 580px) {
+    // Large Heading
+    .l-heading {
+        font-size: 3rem;
+    }
+    #header-home {
+        .header-content {
+            padding-top: 3rem;
+        }
+    }
+}
+
+@media (max-height: 375px) {
+    #header-home {
+        .header-content {
+            padding-top: 0;
+        }
     }
 }
