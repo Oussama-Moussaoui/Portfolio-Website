@@ -54,16 +54,27 @@ img {
         color: #fff;
         background: $bg-img no-repeat center right/cover;
         height: 100vh;
+        position: relative;
+
+        // Header Home Container
+        .header-home-container {
+            position: relative;
+            top: 0;
+            height: 100%;
+        }
 
         // Header Content
         .header-content {
-            // height: 80vh;
-            // display: flex;
-            // flex-direction: column;
-            // align-items: center;
-            // justify-content: center;
-            padding-top: 20%;
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
             text-align: center;
+            // padding-top: 20%;
         }
     }
 
@@ -165,7 +176,7 @@ img {
             grid-template-columns: repeat(4, 1fr);
             grid-gap: .5rem;
             margin-top: 2rem;
-            
+
             // &-icon {
             //     position: relative;
             //     background: $dark-clr;
@@ -177,7 +188,7 @@ img {
             //     text-align: center;
             //     transition: all 1s;
             // }
-            
+
             // &-step {
             //     position: absolute;
             //     top: 0;

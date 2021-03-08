@@ -1,0 +1,43 @@
+// Tablets
+@media (max-width: 800px) {
+    #header-home {
+        height: 75vh;
+
+        .header-content {
+            padding-top: 3.5rem;
+        }
+    }
+}
+
+// 620px and less
+@media (max-width: 620px) {
+    // Large Heading
+    .l-heading {
+        font-size: 3.3rem;
+    }
+
+    // Main nav
+    #main-nav {
+        flex-direction: column;
+
+        #logo, ul {
+            align-self: center;
+        }
+
+        li {
+            padding: .9rem;
+        }
+    }
+
+    // Header
+    #header-home {
+        height: 85vh;
+    }
+}
+
+@media (max-height: 640px) {
+    // Header
+    #header-home {
+        height: 100vh;
+    }
+}
