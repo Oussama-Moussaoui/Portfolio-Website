@@ -239,6 +239,140 @@ img {
     }
 }
 
+// About Sections
+#about {
+    // About - A
+    &-a {
+        .about-info {
+            display: grid;
+            grid-template-areas:
+            'bio-image bio bio'
+            'aw1 aw2 aw3';
+            grid-gap: 1rem;
+            
+            .bio-img {
+                grid-area: bio-image;
+            }
+            
+            .bio {
+                grid-area: bio;
+                padding: 1rem;
+                border-left: 3px $main-clr solid;
+                
+                p {
+                    margin-bottom: 0;
+                }
+            }
+            
+            .award {
+                text-align: center;
+                margin-top: 1rem;
+                .fas {
+                    margin-bottom: 1rem;
+                    color: $main-clr;
+                }
+            }
+            
+            .aw1 {
+                grid-area: aw1;
+            }
+            .aw2 {
+                grid-area: aw2;
+            }
+            .aw3 {
+                grid-area: aw3;
+            }
+        }
+    }
+    
+    // About - B
+    &-b {
+        .progress {
+            width: 100%;
+            height: 1.2rem;
+            background: $medium-clr;
+            border-radius: 5px;
+            margin-bottom: 0.8rem;
+            margin-top: 5px;
+            
+            div {
+                height: 100%;
+                background: $main-clr;
+                border-radius: 5px;
+            }
+        }
+    }
+    
+    // About - C
+    &-c {
+        .about-logos {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: 1.5rem;
+            
+            img {
+                width: 70%;
+            }
+        }
+    }
+    
+    // About - D
+    &-d {
+        .testimonials {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-gap: .5rem;
+            
+            ul {
+                display: flex;
+                margin-top: 1rem;
+                align-items: center;
+                
+                img {
+                    width: 70px;
+                    border-radius: 50%;
+                    margin-right: 0.5rem;
+                }
+            }
+            
+            p {
+                border: $medium-clr 1px solid;
+                border-radius: 5px;
+                padding: .5rem;
+            }
+        }
+    }
+}
+
+// Work | Gallery
+@import 'gallery';
+
+// Contact
+#contact {
+    // Section A - Contact Form
+    &-a {
+        .form-wrap {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1.2rem;
+            margin-bottom: 1.2rem;
+        }
+
+        #message {
+            grid-column: 1 / span 2;
+            height: 6rem;
+        }
+
+        input, textarea {
+            padding: .5rem 1rem;
+        }
+
+        button[type='submit'] {
+            width: 50%;
+        }
+    }
+}
+
 /* Main Footer */
 #main-footer {
     background: $dark-clr;
@@ -266,111 +400,3 @@ img {
         }
     }
 }
-
-// About Sections
-#about {
-    // About - A
-    &-a {
-        .about-info {
-            display: grid;
-            grid-template-areas:
-                'bio-image bio bio'
-                'aw1 aw2 aw3';
-            grid-gap: 1rem;
-
-            .bio-img {
-                grid-area: bio-image;
-            }
-
-            .bio {
-               grid-area: bio;
-                padding: 1rem;
-                border-left: 3px $main-clr solid;
-
-                p {
-                    margin-bottom: 0;
-                }
-            }
-
-            .award {
-                text-align: center;
-                margin-top: 1rem;
-                .fas {
-                    margin-bottom: 1rem;
-                    color: $main-clr;
-                }
-            }
-
-            .aw1 {
-                grid-area: aw1;
-            }
-            .aw2 {
-                grid-area: aw2;
-            }
-            .aw3 {
-                grid-area: aw3;
-            }
-        }
-    }
-
-    // About - B
-    &-b {
-        .progress {
-            width: 100%;
-            height: 1.2rem;
-            background: $medium-clr;
-            border-radius: 5px;
-            margin-bottom: 0.8rem;
-            margin-top: 5px;
-
-            div {
-                height: 100%;
-                background: $main-clr;
-                border-radius: 5px;
-            }
-        }
-    }
-
-    // About - C
-    &-c {
-        .about-logos {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-gap: 1.5rem;
-
-            img {
-                width: 70%;
-            }
-        }
-    }
-
-    // About - D
-    &-d {
-        .testimonials {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            grid-gap: .5rem;
-
-            ul {
-                display: flex;
-                margin-top: 1rem;
-                align-items: center;
-
-                img {
-                    width: 70px;
-                    border-radius: 50%;
-                    margin-right: 0.5rem;
-                }
-            }
-
-            p {
-                border: $medium-clr 1px solid;
-                border-radius: 5px;
-                padding: .5rem;
-            }
-        }
-    }
-}
-
-// Work | Gallery
-@import 'gallery';

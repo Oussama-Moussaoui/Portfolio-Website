@@ -350,41 +350,6 @@ img {
   background: #333;
 }
 
-/* Main Footer */
-#main-footer {
-  background: #333;
-  color: #fff;
-  height: 5rem;
-}
-
-#main-footer .footer-content {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  height: 5rem;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#main-footer .footer-content .s-media a {
-  display: inline-block;
-  margin-right: 1rem;
-  padding: 7px 10px;
-  border-radius: 50px;
-  border: 2px #fff solid;
-  color: #fff;
-  -webkit-transition: 0.3s background ease;
-  transition: 0.3s background ease;
-}
-
-#main-footer .footer-content .s-media a:hover {
-  background: #ffbc00;
-}
-
 #about-a .about-info {
   display: -ms-grid;
   display: grid;
@@ -589,5 +554,64 @@ img {
 
 .item-category {
   font-size: 1.2rem;
+}
+
+#contact-a .form-wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+#contact-a #message {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 2;
+  grid-column: 1 / span 2;
+  height: 6rem;
+}
+
+#contact-a input, #contact-a textarea {
+  padding: .5rem 1rem;
+}
+
+#contact-a button[type='submit'] {
+  width: 50%;
+}
+
+/* Main Footer */
+#main-footer {
+  background: #333;
+  color: #fff;
+  height: 5rem;
+}
+
+#main-footer .footer-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 5rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#main-footer .footer-content .s-media a {
+  display: inline-block;
+  margin-right: 1rem;
+  padding: 7px 10px;
+  border-radius: 50px;
+  border: 2px #fff solid;
+  color: #fff;
+  -webkit-transition: 0.3s background ease;
+  transition: 0.3s background ease;
+}
+
+#main-footer .footer-content .s-media a:hover {
+  background: #ffbc00;
 }
 /*# sourceMappingURL=style.css.map */
