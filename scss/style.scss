@@ -70,7 +70,7 @@ img {
     // Header Inner
     &-inner {
         background: $bg-img no-repeat 20% 30%/cover;
-        height: 5.5rem;
+        height: 6rem;
         border-bottom: 3px $main-clr solid;
     }
 }
@@ -371,3 +371,6 @@ img {
         }
     }
 }
+
+// Work | Gallery
+@import 'gallery';
